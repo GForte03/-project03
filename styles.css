@@ -1,0 +1,110 @@
+* { box-sizing: border-box; }
+/* Body styles */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.4;
+  margin: 0;
+  color: #111;
+  background: #ffeef7; /* light pink */
+  padding: 1rem;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: .5rem .75rem;
+  background: #d63384; /* pink */
+  color: #fff;
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+/* Header */
+.site-header {
+  margin: 0 0 1rem 0;
+  border-left: 6px solid #d63384;
+  padding-left: 1rem;
+}
+.site-header h1 {
+  font-size: 1.5rem;
+  margin: 0 0 .25rem 0;
+  color: #b30063;
+}
+.lede {
+  margin: 0;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #f7b8d3;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
+/* Table wrapper */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Table styles */
+.agency-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  min-width: 700px;
+  background: #fff0f7; /* subtle pink*/
+}
+.agency-table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 600;
+  padding-bottom: .5rem;
+  color: #b30063;
+}
+.agency-table th,
+.agency-table td {
+  padding: .6rem .75rem;
+  border: 1px solid #f2c7dc;
+  text-align: left;
+}
+.agency-table thead th {
+  background: #ffd3e8;
+  font-weight: 700;
+  color: #7a0040;
+}
+
+/* Footer */
+.site-footer {
+  margin: 1rem auto 0 auto;
+  max-width: 900px;
+  text-align: center;
+  font-size: .95rem;
+  color: #7a0040;
+}
+.site-footer a {
+  text-decoration: underline;
+  color: #b30063;
+}
+
+/* Responsive adjustments */
+@media (max-width: 540px) {
+  .site-header h1 { font-size: 1.125rem; }
+  .container { padding: .75rem; }
+  .agency-table { min-width: 600px; }
+}
